@@ -1170,6 +1170,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+.map-responsive {
+  overflow: hidden;
+  /* The aspect ratio (9/16 * 100 = 56.25%) */
+  padding-bottom: 56.25%; 
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0; /* Ensures no default border is present */
+}
+
 iframe {
   display: block; /* Treats the iframe as a block element */
   margin-left: auto; /* Automatic margin from the left */
